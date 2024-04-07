@@ -140,13 +140,17 @@ function playGame(rounds) {
         }
     }
 
-    console.log("What fun! Here are the results.")
-    console.log("Ties: " + ties);
-    console.log("You win: " + wins);
-    console.log("Computer wins: " + losses);
+    let output;
+
+    output = "What fun! Here are the results."
+    output += "\nTies: " + ties;
+    output += "\nYou win: " + wins;
+    output += "\nComputer wins: " + losses;
     if(wins > losses) {
-        console.log("You won overall! Such skill and talent!");
+        output += "\nYou won overall! Such skill and talent!";
     }
+
+    alert(output);
 }
 
 playGame(5);
